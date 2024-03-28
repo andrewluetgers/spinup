@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "node bin/index.mjs",
-    "updateSubmodules": "git submodule update --init --recursive"
+    "postinstall": "git submodule update --init --recursive"
   },
   "dependencies": {
     "@octokit/rest": "20.0.2",
