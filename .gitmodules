@@ -1,3 +1,6 @@
 [submodule "templates/vite-starter"]
 	path = templates/vite-starter
 	url = https://github.com/andrewluetgers/vite-starter.git
+[submodule "templates/TurboRepo-React"]
+	path = templates/TurboRepo-React
+	url = https://github.com/andrewluetgers/TurboRepo-React.git

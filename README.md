@@ -14,3 +14,4 @@ from project root
 
 Add templates as submodules
 ```git submodule add https://github.com/someaccount/some-starter.git templates/some-starter```
+```git submodule add https://github.com/andrewluetgers/TurboRepo-React.git templates/TurboRepo-React```
