@@ -1,0 +1,32 @@
+{
+  "name": "@loot/spinup",
+  "version": "1.0.0",
+  "description": "Cli tool to spin up a SaaS",
+  "author": "Andrew Luetgers",
+  "license": "MIT",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewluetgers/spinup.git"
+  },
+  "type": "module",
+  "main": "bin/index.mjs",
+  "bin": {
+    "loot-spinup": "./bin/index.mjs"
+  },
+  "scripts": {
+    "start": "node bin/index.mjs"
+  },
+  "dependencies": {
+    "@octokit/rest": "20.0.2",
+    "chalk": "5.3.0",
+    "clear": "0.1.0",
+    "commander": "12.0.0",
+    "enquirer": "2.4.1",
+    "figlet": "1.7.0",
+    "inquirer": "9.2.16",
+    "octokit": "3.1.2",
+    "prompts": "2.4.2",
+    "simple-git": "3.23.0"
+  }
+}

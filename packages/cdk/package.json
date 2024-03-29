@@ -1,0 +1,25 @@
+{
+	"name": "@repo/cdk",
+	"version": "1.0.0",
+	"description": "CDK Constructs for Spinup",
+	"author": "Andrew Luetgers",
+	"license": "MIT",
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andrewluetgers/spinup.git"
+	},
+	"type": "module",
+	"main": "bin/index.mjs",
+	"bin": {
+		"loot-spinup": "./bin/index.mjs"
+	},
+	"scripts": {
+		"start": "node bin/index.mjs"
+	},
+	"dependencies": {
+		"aws-cdk": "2.134.0",
+		"aws-cdk-lib": "2.134.0",
+		"constructs": "10.3.0"
+	}
+}

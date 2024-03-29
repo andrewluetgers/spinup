@@ -1,0 +1,23 @@
+
+version: 0.2
+
+phases:
+    install:
+        runtime-versions:
+            nodejs: 20
+        commands:
+            - corepack enable
+            - corepack prepare pnpm@latest --activate
+    pre_build:
+        commands:
+            - echo Installing dependencies...
+            - pnpm run ciInstall
+    build:
+        commands:
+            - echo building...
+            - pnpm run ciBuild
+    post_build:
+        commands:
+            - aws s3 sync --delete app/client/dist "s3://www.metamedia.co"
+            - npm run invalidate
+            - echo Build completed on `date`
