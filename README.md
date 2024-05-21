@@ -1,5 +1,5 @@
 # spinup
-Cli tool to spin up a project on GitHub
+Cli tool to spin up a project on GitHub.
 
 ## Usage
 
